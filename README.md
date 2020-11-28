@@ -144,10 +144,10 @@ localhost:8000/api/rest-auth/logout
 ```
 
 ```
-localhost:(port)/api/course
-localhost:(port)/api/guru
-localhost:(port)/api/murid
-localhost:(port)/api/enrollment
+localhost:8000/api/course
+localhost:8000/api/guru
+localhost:8000/api/murid
+localhost:8000/api/enrollment
 ```
 
 ## Built With
