@@ -4,7 +4,7 @@ Bagi Tugas is a project for web development class
 
 ## Getting Started
 
-These instruction will give you step to setup the project and run in your local machine
+These instruction will give you step-by-step to setup the project and run it on your local machine
 
 ## Prerequisite
 
@@ -124,7 +124,7 @@ localhost:port/api/enrollment
 
 ## Front End
 
-Check the [Front-End](https://github.com/dianrahmaji/bagitugas-frontend) for Bagi Tugas by [dianrahmaji](https://github.com/dianrahmaji)
+Check the [Front-End](https://github.com/dianrahmaji/bagitugas-frontend) for Bagi Tugas - by [dianrahmaji](https://github.com/dianrahmaji)
 
 ## License
 
