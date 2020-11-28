@@ -116,7 +116,7 @@ Input email and password for superuser
 (env)$ python3 manage.py runserver
 ```
 
-The default port for the endpoint is 8000
+The default port for the endpoint is ```localhost:8000```
 
 But you can define your own port,
 
@@ -129,11 +129,18 @@ Just add the port you want after ```runserver```
 
 ## Available Endpoints
 
+Open your browser and go to
 ```
-localhost:(port)/admin
-localhost:(port)/api/rest-auth/registration
-localhost:(port)/api/rest-auth/login
-localhost:(port)/api/rest-auth/logout
+localhost:8000
+or
+127.0.0.1:8000
+```
+
+```
+localhost:8000/admin
+localhost:8000/api/rest-auth/registration
+localhost:8000/api/rest-auth/login
+localhost:8000/api/rest-auth/logout
 ```
 
 ```
