@@ -120,7 +120,7 @@ The default port for the endpoint is 8000
 
 But you can define your own port,
 
-Just add the port you want after 'runserver'
+Just add the port you want after ```runserver```
 
 #### Example
 ```
