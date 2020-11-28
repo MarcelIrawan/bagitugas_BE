@@ -8,11 +8,11 @@ These instruction will give you step-by-step to setup the project and run it on 
 
 ## Prerequisite
 
-Few things that needs to be installed and prepared
+Few things that needed for the project
 
 ```
-python >= 3.6
-pip >= 20.4
+Python >= 3.5
+Pip
 Python Venv
 ```
 
@@ -161,4 +161,4 @@ Check the [Front-End](https://github.com/dianrahmaji/bagitugas-frontend) for Bag
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
