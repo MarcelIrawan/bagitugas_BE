@@ -20,6 +20,8 @@ Python Venv
 
 Make sure you already have python in your local machine
 
+### ! For Windows user I recommend to use the git bash console !
+
 ### First, clone or download the git project
 
 ```
@@ -30,74 +32,74 @@ git clone https://github.com/MarcelIrawan/bagitugas_BE.git
 
 On Windows
 ```
-python -m venv env
+$ python -m venv env
 ```
 
 On linux or MacOS
 ```
-python3 -m venv env
+$ python3 -m venv env
 ```
 
 ### Activate the virtual environtment
 
-On windows
+On Windows
 ```
-source env/Scripts/activate
+$ source env/Scripts/activate
 ```
 
 On linux and MacOS
 ```
-source env/bin/activate
+$ source env/bin/activate
 ```
 
 ### Update the pip (Optional)
 
 On Windows
 ```
-python -m pip install -U pip
+(env)$ python -m pip install -U pip
 ```
 
 On linux or MacOS
 ```
-pip3 install -U pip
+(env)$ pip3 install -U pip
 ```
 
 ### Install the requirements into the virual env
 
 On Windows
 ```
-pip install -r requirements.txt
+(env)$ pip install -r requirements.txt
 ```
 
 On Linux or MacOS
 ```
-pip3 install -r requirements.txt
+(env)$ pip3 install -r requirements.txt
 ```
 
 ### Migrate the models
 
 On Windows
 ```
-python manage.py makemigrations
-python manage.py migrate
+(env)$ python manage.py makemigrations
+(env)$ python manage.py migrate
 ```
 
 On Linux or MacOS
 ```
-python3 manage.py makemigrations
-python3 manage.py migrate
+(env)$ python3 manage.py makemigrations
+(env)$ python3 manage.py migrate
 ```
 
 ### Run the project
 
 On Windows
 ```
-python manage.py runserver
+(env)$ python manage.py runserver
 ```
 
 On Linux or MacOS
 ```
-python3 manage.py runserver
+(env)$ python3 manage.py runserver
 ```
 
 
