@@ -90,6 +90,13 @@ On Linux or MacOS
 (env)$ python3 manage.py migrate
 ```
 
+### Create Superuser
+
+```
+(env)$ python manage.py createsuperuser
+```
+Input email and password for superuser
+
 ### Run the project
 
 On Windows
@@ -102,21 +109,29 @@ On Linux or MacOS
 (env)$ python3 manage.py runserver
 ```
 
+The default port for the endpoint is 8000
+But you can define your own port
+Just add the port you want after 'runserver'
+
+Example
+```
+(env)$ python manage.py runserver 8081
+```
 
 ## Available Endpoints
 
 ```
-localhost:port/admin
-localhost:port/api/rest-auth/registration
-localhost:port/api/rest-auth/login
-localhost:port/api/rest-auth/logout
+localhost:(port)/admin
+localhost:(port)/api/rest-auth/registration
+localhost:(port)/api/rest-auth/login
+localhost:(port)/api/rest-auth/logout
 ```
 
 ```
-localhost:port/api/course
-localhost:port/api/guru
-localhost:port/api/murid
-localhost:port/api/enrollment
+localhost:(port)/api/course
+localhost:(port)/api/guru
+localhost:(port)/api/murid
+localhost:(port)/api/enrollment
 ```
 
 ## Built With
