@@ -35,56 +35,56 @@ git clone https://github.com/MarcelIrawan/bagitugas_BE.git
 $ python -m venv env
 ```
 
-On linux or MacOS
+#### On Linux or MacOS
 ```
 $ python3 -m venv env
 ```
 
 ### Activate the virtual environtment
 
-On Windows
+#### On Windows
 ```
 $ source env/Scripts/activate
 ```
 
-On linux and MacOS
+#### On Linux and MacOS
 ```
 $ source env/bin/activate
 ```
 
 ### Update the pip (Optional)
 
-On Windows
+#### On Windows
 ```
 (env)$ python -m pip install -U pip
 ```
 
-On linux or MacOS
+#### On Linux or MacOS
 ```
 (env)$ pip3 install -U pip
 ```
 
 ### Install the requirements into the virual env
 
-On Windows
+#### On Windows
 ```
 (env)$ pip install -r requirements.txt
 ```
 
-On Linux or MacOS
+#### On Linux or MacOS
 ```
 (env)$ pip3 install -r requirements.txt
 ```
 
 ### Migrate the models
 
-On Windows
+#### On Windows
 ```
 (env)$ python manage.py makemigrations
 (env)$ python manage.py migrate
 ```
 
-On Linux or MacOS
+#### On Linux or MacOS
 ```
 (env)$ python3 manage.py makemigrations
 (env)$ python3 manage.py migrate
@@ -92,19 +92,26 @@ On Linux or MacOS
 
 ### Create Superuser
 
+#### On Windows
 ```
 (env)$ python manage.py createsuperuser
 ```
+
+#### On Linux and MacOS
+```
+(env)$ python3 manage.py createsuperuser
+```
+
 Input email and password for superuser
 
 ### Run the project
 
-On Windows
+#### On Windows
 ```
 (env)$ python manage.py runserver
 ```
 
-On Linux or MacOS
+#### On Linux or MacOS
 ```
 (env)$ python3 manage.py runserver
 ```
@@ -115,7 +122,7 @@ But you can define your own port,
 
 Just add the port you want after 'runserver'
 
-Example
+#### Example
 ```
 (env)$ python manage.py runserver 8081
 ```
