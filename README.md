@@ -50,7 +50,7 @@ On linux and MacOS
 source env/bin/activate
 ```
 
-### Update the pip
+### Update the pip (Optional)
 
 On Windows
 ```
@@ -121,6 +121,10 @@ localhost:port/api/enrollment
 
 * [Django](djangoproject.com) - The backend framework
 * [Django-REST-Framework](django-rest-framework.org) - Used for build RESTful Web
+
+## Front End
+
+Check the [Front-End](https://github.com/dianrahmaji/bagitugas-frontend) for Bagi Tugas by [dianrahmaji](https://github.com/dianrahmaji)
 
 ## License
 
