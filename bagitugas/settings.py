@@ -137,7 +137,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'files')
 
 STATIC_URL = '/static/'
 
-STATIT_ROOT = 'static/'
+STATIC_ROOT = 'static/'
 
 
 REST_FRAMEWORK = {
