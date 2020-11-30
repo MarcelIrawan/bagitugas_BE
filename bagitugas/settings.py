@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'b9ml(=2-nh!*^@kjl01pwk!6b_&2$vq3+c2rhajla%=334les2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 
 ALLOWED_HOSTS = []
 
@@ -137,6 +137,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'files')
 
 STATIC_URL = '/static/'
 
+STATIT_ROOT = 'static/'
 
 
 REST_FRAMEWORK = {
