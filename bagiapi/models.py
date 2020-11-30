@@ -70,7 +70,7 @@ class Course(models.Model):
     """
     teacher = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     judul = models.CharField(max_length=200)
-    materi = models.FileField()
+    materi = models.FileField(upload_to='materi_course/')
     link = models.URLField()
     reward = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)

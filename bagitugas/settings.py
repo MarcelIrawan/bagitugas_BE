@@ -51,6 +51,8 @@ INSTALLED_APPS = [
 
     'rest_auth',
     'rest_auth.registration',
+
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
@@ -134,10 +136,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'files')
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/')
-]
 
 
 
