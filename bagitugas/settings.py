@@ -60,7 +60,7 @@ INSTALLED_APPS = [
 
     'django_cleanup.apps.CleanupConfig',
 
-    # 'corsheaders',
+    'corsheaders',
 
 ]
 
