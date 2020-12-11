@@ -42,7 +42,7 @@ class ProfileGuru(models.Model):
     deskripsi = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return self.nama
+        return f"{self.nama_depan} {self.nama_belakang}"
 
 
 class ProfileMurid(models.Model):
@@ -61,7 +61,7 @@ class ProfileMurid(models.Model):
     jumlahcourse = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
-        return self.nama
+        return f"{self.nama_depan} {self.nama_belakang}"
 
 
 class Course(models.Model):
