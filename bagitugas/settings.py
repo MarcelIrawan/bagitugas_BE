@@ -46,8 +46,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
-    'corsheaders',
-
     'bagiapi',
 
     'rest_framework',
@@ -61,6 +59,9 @@ INSTALLED_APPS = [
     'rest_auth.registration',
 
     'django_cleanup.apps.CleanupConfig',
+
+    'corsheaders',
+
 ]
 
 MIDDLEWARE = [
