@@ -10,7 +10,7 @@ router = DefaultRouter()
 router.register(r"course", CourseViewSet, basename="course")
 router.register(r"guru", ProfileGuruViewSet, basename="profile-guru")
 router.register(r"murid", ProfileMuridViewSet, basename="profile-murid")
-router.register(r"enrollment", EnrollmenViewSet, basename="enrollment")
+router.register(r"enroll", EnrollmenViewSet, basename="enroll")
 
 urlpatterns = [
     path("", include(router.urls))
