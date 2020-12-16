@@ -70,15 +70,29 @@ class Course(models.Model):
     """
     teacher = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     judul = models.CharField(max_length=200)
-    materi = models.FileField(upload_to='materi_course/')
+    # materi = models.FileField(upload_to='materi_course/')
+    deskripsi = models.TextField(blank=True, null=True)
     link = models.URLField()
     reward = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     student = models.ManyToManyField(ProfileMurid, through='Enrollment')
-
+    # material = models.ForeignKey(Material)
     def __str__(self):
         return self.judul
+
+
+class Material(models.Model):
+    """
+    material model
+    """
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
+    pertemuan = models.CharField(max_length=50, blank=True, null=True)
+    link = models.URLField(blank=True)
+    modul = models.FileField(upload_to='modul_course/')
+
+    def __str__(self):
+        return self.pertemuan
 
 
 class Enrollment(models.Model):

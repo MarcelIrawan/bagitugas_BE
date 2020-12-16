@@ -29,7 +29,8 @@ DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 ALLOWED_HOSTS = [
                 'ec2-3-84-119-141.compute-1.amazonaws.com',
                 '127.0.0.1',
-                'localhost'
+                'localhost',
+                'ada2446d62c2.ngrok.io'
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -61,6 +62,8 @@ INSTALLED_APPS = [
     'django_cleanup.apps.CleanupConfig',
 
     'corsheaders',
+
+    'django_filters',
 
 ]
 
@@ -157,7 +160,8 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication'
-    ]
+    ],
+'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
 
 REST_AUTH_SERIALIZERS = {

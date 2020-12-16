@@ -1,7 +1,12 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from .models import CustomUser, ProfileGuru, ProfileMurid, Course, Enrollment
+from .models import (CustomUser,
+                     ProfileGuru,
+                     ProfileMurid,
+                     Course,
+                     Enrollment,
+                     Material)
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
@@ -26,3 +31,4 @@ admin.site.register(Course)
 admin.site.register(ProfileGuru)
 admin.site.register(ProfileMurid)
 admin.site.register(Enrollment)
+admin.site.register(Material)
